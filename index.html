@@ -2,14 +2,62 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>簡易ブログ</title>
-  <link rel="stylesheet" href="test.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブログサイトテンプレート</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>私の簡易ブログ</h1>
-  <h2>記事一覧</h2>
-  <ul>
-    <li><a href="page1.html">記事1：HTMLの基本</a></li>
-  </ul>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">ホーム</a>
+      <a href="#">記事一覧</a>
+      <a href="#">プロフィール</a>
+      <a href="#">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- メイン記事エリア -->
+    <div>
+      <article>
+        <h2>記事タイトル 1</h2>
+        <div class="date">2025-10-04</div>
+        <p>ここにブログ記事の本文が入ります。サンプルのテキストです。</p>
+        <button onclick="likePost(this)">いいね 👍 <span>0</span></button>
+      </article>
+
+      <article>
+        <h2>記事タイトル 2</h2>
+        <div class="date">2025-10-03</div>
+        <p>別の記事本文の例。ここにテキストを追加できます。</p>
+        <button onclick="likePost(this)">いいね 👍 <span>0</span></button>
+      </article>
+    </div>
+
+    <!-- サイドバー -->
+    <aside>
+      <h3>最新記事</h3>
+      <ul>
+        <li><a href="#">記事タイトル 1</a></li>
+        <li><a href="#">記事タイトル 2</a></li>
+        <li><a href="#">記事タイトル 3</a></li>
+      </ul>
+
+      <h3>カテゴリ</h3>
+      <ul>
+        <li><a href="#">テクノロジー</a></li>
+        <li><a href="#">ライフスタイル</a></li>
+        <li><a href="#">趣味</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
